@@ -9,7 +9,7 @@ import mysql.connector # MYSQL Connector for Database Connectivity
 def fetch_last_student_roll_no():
     cursor.execute("SELECT student_roll_no FROM students ORDER BY student_roll_no DESC LIMIT 1" )
     student_roll_no = cursor.fetchone()[0]
-    return student_roll_no 
+    return student_roll_no
 
 #
 def add_student_record(student_roll_no, student_name, student_address, student_grade):
